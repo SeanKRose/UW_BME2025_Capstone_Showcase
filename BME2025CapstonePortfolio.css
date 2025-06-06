@@ -1,0 +1,85 @@
+body
+{
+    background-color: black;
+}
+
+.title
+{
+    color: cyan;
+    background-color: gray;
+    /*border:2px double red;*/
+    text-align: center;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
+
+.blue
+{
+    color: blue
+}
+
+.imageHeight
+{
+    height: 40px;
+}
+
+.format
+{
+    margin: auto;
+    width: 90%;
+}
+
+.intro
+{
+    padding: 20px 0px;
+    font-size: 1.08vw;
+    background-color: lightcyan;
+}
+
+.memories
+{
+    padding: 0px 0px;
+    font-size: 1.08vw;
+}
+
+.indent
+{
+    padding-left: 50px;
+}
+
+.imageR
+{
+    width: 25vw;
+    height: auto;
+    float:right;
+    padding-left: 50px;
+
+}
+
+.imageL
+{
+    width: 25vw;
+    height: auto;
+    float:left;
+    padding-right: 50px;
+
+}
+
+.subtitle
+{
+    font-size: 2vw;
+
+}

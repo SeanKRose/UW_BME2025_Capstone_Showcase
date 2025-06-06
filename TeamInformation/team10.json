@@ -1,12 +1,17 @@
 {
-  "Team_Number": "",
-  "Team_Name": "",
-  "Project_Description": "",
-  "Team_Members": "",
+  "Team_Number": "10",
+  "Team_Name": "Brave",
+  "Project_Description": "Ankle injuries caused by overuse, including Achilles tendinopathy, are the most common injuries seen in professional ballet dancers, and are challenging to heal and characterize properly. Brava aims to help dancers and their physiotherapists make data-driven decisions about their ankle injuries. Utilising markerless motion capture via computer vision, this tool classifies and counts a dancer’s movements, enabling them to set individualized training thresholds and receive feedback as they approach these limits. Brava supports dancers by focusing on their artform instead of their injuries.",
+  "Specialization": "",
+  "awards": "",
+  "Team_Members": "Caitlin Serrao, Jacqueline Lee, Marie De Mey, Chantelle Ng",
+  "Advisor": "",
   "Overall_Capstone_Experience": "",
   "Favourite_Memory": "",
   "Biggest_Challenges": "",
   "Takeaway": "",
   "Advice": "",
-  "Contact_Information": ""
+  "Contact_Information": "",
+  "Primary_Colour": "",
+  "Secondary_Colour": ""
 }

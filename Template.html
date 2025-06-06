@@ -1,0 +1,103 @@
+<!-- Projects section example: https://youtu.be/dgKSqz3it50?t=90 -->
+<!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h-->
+<!--figma-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Team_Name}}</title>
+    <link rel="stylesheet" href="../BME2025CapstonePortfolio.css">
+</head>
+<body class="container format">
+    <h1 class="title"> 
+        <img src="../TeamLogo/{{Team_Number}}.png" alt="{{Team_Name}} Logo" style="height: 80px;"> 
+    </h1>
+
+    <div class="container intro">
+        <p1>
+            <h1>Project Description</h1>
+            {{Project_Description}}
+            <br> 
+            <br>
+            <img src = "../TeamPrototypes/{{Team_Number}}.png" alt = "Picture of {{Team_Name}}'s Prototype">
+            <br>
+            <br>
+            {% if specialization %}
+                <h2>Specializations</h2>
+                This project qualified for the requirements of the <b>{{Specialization}}</b> specialization.
+            {% endif %}
+            <br>
+            {% if awards %}
+                <h2>Funding, Awards, & Distinctions</h2>
+                    {% for award in awards %}
+                        <b>{{ award.title }}:</b> {{ award.details }}<br>
+                    {% endfor %}
+            {% endif %}
+        </p1>
+    </div>
+    
+    <br>
+    
+    <div class="container intro">
+        <p4>
+            <h1 class = title>Symposium Poster</h1>
+            <img src = "../TeamPosters/{{Team_Number}}.jpg" alt = "Picture of {{Team_Name}}'s Capstone Symposium Poster" class = image >
+        </p4>
+    </div>
+
+    <br>
+
+    <div class="container intro">
+        <p1>
+            <h1 class = title>Meet the {{Team_Name}} Team!</h1>
+            <br>
+            <img src = "../TeamPictures/{{Team_Number}}.png" alt = "A picture of {{Team_Name}}" class = image >          
+            <center> {{Team_Members}} </center>
+            <br>
+            <center>Advisor: {{Advisor}}</center>
+        </p1>
+    </div>
+
+    <br>
+
+    <div class="container intro">
+        <h1 class = title>Overall Capstone Experience</h1>
+
+        <h3 class = subtitle>Capstone Described in 3 Words:</h3>
+        {{Overall_Capstone_Experience}}
+        <h3 class = subtitle>Favourite Capstone Memory</h3>
+        {{Favourite_Memory}}
+
+        <h3 class = subtitle>Biggest Challenges</h3>
+        {{Biggest_Challenges}}
+
+        <h3 class = subtitle>Takeaways</h3>
+        {{Takeaway}}
+
+        <h3 class = subtitle>Advice for Future BME Students</h3>
+        {{Advice}}
+
+        {% if Contact_Information %}
+            <br>
+            <br>
+            <br>
+            <center>Contact Information: Feel free to reach out to {{Contact_Information}} with any questions.</center>
+        {% endif %}
+    </div>
+
+</body>
+</html>

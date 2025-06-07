@@ -6,7 +6,7 @@
   "awards": [
     {
       "title": "Baylis Medical Capstone Design Award",
-      "details": "Awarded $5,000 from Baylis Medical for targeting a biomedical problem space..."
+      "details": "Awarded $5,000 from Baylis Medical for targeting a biomedical problem space demonstrating significant need."
     },
     {
       "title": "Best Prototype Award",
@@ -17,7 +17,7 @@
   "Advisor": "Eline Boghaert",
   "Overall_Capstone_Experience": "Inventive, Intense, Impactful",
   "Favourite_Memory": "Building the prototype together at 2am.",
-  "Biggest_Challenges": "The number of iterations required in such a short time.",
+  "Biggest_Challenges": ["The number of iterations required in such a short time."],
   "Takeaway": "Strong teamwork makes technical progress possible.",
   "Advice": "Start prototyping EARLY. Having a partial prototype to show by the end of 4A will help convey your vision for the project to the teaching team, allowing you to receive better feedback and clarify expectations. You will also encounter significantly more problems than you expect, so don't rule out any potential solution too early.",
   "Contact_Information": "sean.rose@uwaterloo.ca",

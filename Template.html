@@ -23,6 +23,8 @@
 
         .title, h1, h2, h3, h4, h5, h6 {
             color: {{ Primary_Colour | default("#000000") }};
+            background-color: {{ Secondary_Colour | default("#ffffff")}};
+            border-radius: 8px;
         }
 
 
@@ -46,8 +48,8 @@
 
     <div class="container intro">
         <p1>
-            <h1>Project Description</h1>
-            {{Project_Description}}
+            <h1 class="title">Project Description</h1>
+            <body>{{Project_Description}}</body>
             <br><br>
             <img src="../TeamPrototypes/{{Team_Number}}.png" alt="Picture of {{Team_Name}}'s Prototype">
             <br><br>
@@ -98,19 +100,27 @@
         {{Favourite_Memory}}
 
         <h3 class="subtitle">Biggest Challenges</h3>
-        {{Biggest_Challenges}}
+        <ol>
+            {% for challenge in Biggest_Challenges %}
+            <li>{{ challenge }}</li>
+            {% endfor %}
+        </ol>
 
         <h3 class="subtitle">Takeaways</h3>
         {{Takeaway}}
 
         <h3 class="subtitle">Advice for Future BME Students</h3>
         {{Advice}}
-
-        {% if Contact_Information %}
-            <br><br><br>
-            <center>Contact Information: Feel free to reach out to {{Contact_Information}} with any questions.</center>
-        {% endif %}
     </div>
+        
+    {% if Contact_Information %}
+    <br>
+    <div class="container intro">
+        <h1 class="subtitle">Contact Information</h1>
+        Feel free to reach out to {{Contact_Information}} with any questions.
+
+    </div>
+    {% endif %}
 
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!-- HomePageTemplate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BME 2025 Capstone Showcase</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    <h1>2025 BME Capstone Showcase</h1>
+    <div class="gallery">
+        {% for team in teams %}
+        <a class="tile" href="{{ team.Page_Link }}">
+            <div class="caption">{{ team.Team_Name }}</div>
+            <img src="{{ team.Prototype_Image }}" alt="{{ team.Team_Name }}">
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

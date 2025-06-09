@@ -22,5 +22,8 @@
   "Advice": "Start prototyping EARLY. Having a partial prototype to show by the end of 4A will help convey your vision for the project to the teaching team, allowing you to receive better feedback and clarify expectations. You will also encounter significantly more problems than you expect, so don't rule out any potential solution too early.",
   "Contact_Information": "sean.rose@uwaterloo.ca",
   "Primary_Colour": "#58c4c5",
-  "Secondary_Colour": "#ecf6f6"
+  "Secondary_Colour": "#ecf6f6",
+  "Additional_Information": [
+    {"type": "Symposium Slides", "link": "https://docs.google.com/presentation/d/1m_EC6lCH-kNOtbAjFnsoI9Hde6I62wgrovwmLXCKQZA/edit?usp=sharing"}
+  ]
 }

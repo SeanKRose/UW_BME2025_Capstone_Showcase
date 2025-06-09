@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- jQuery library -->
@@ -41,6 +42,7 @@
         }
     </style>
 </head>
+
 <body class="container format">
     <h1 class="title"> 
         <img src="../TeamLogo/{{Team_Number}}.png" alt="{{Team_Name}} Logo" style="height: 80px;"> 
@@ -53,7 +55,7 @@
             <br><br>
             <img src="../TeamPrototypes/{{Team_Number}}.png" alt="Picture of {{Team_Name}}'s Prototype">
             <br><br>
-            {% if specialization %}
+            {% if Specialization %}
                 <h2>Specializations</h2>
                 This project qualified for the requirements of the <b>{{Specialization}}</b> specialization.
             {% endif %}
@@ -96,23 +98,34 @@
 
         <h3 class="subtitle">Capstone Described in 3 Words:</h3>
         {{Overall_Capstone_Experience}}
+        <br>
         <h3 class="subtitle">Favourite Capstone Memory</h3>
         {{Favourite_Memory}}
-
+        <br>
         <h3 class="subtitle">Biggest Challenges</h3>
         <ol>
             {% for challenge in Biggest_Challenges %}
             <li>{{ challenge }}</li>
             {% endfor %}
         </ol>
-
+        <br>
         <h3 class="subtitle">Takeaways</h3>
         {{Takeaway}}
-
+        <br>
         <h3 class="subtitle">Advice for Future BME Students</h3>
         {{Advice}}
     </div>
         
+    {% if Additional_Information %}
+    <br>
+    <div class="container intro">
+        <h1 class="subtitle">Additional Information</h1>
+            {% for info in Additional_Information %}
+                <a href={{info.link}}>{{info.type}}</a>
+            {% endfor %}
+    </div>
+    {% endif %}
+
     {% if Contact_Information %}
     <br>
     <div class="container intro">

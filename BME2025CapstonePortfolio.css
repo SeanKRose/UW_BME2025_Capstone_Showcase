@@ -19,31 +19,6 @@ h1
     font-size: 5vw;
 }
 
-.center
-{
-    text-align: center;
-}
-
-.right
-{
-    text-align: right;
-}
-
-.underline
-{
-    text-decoration: underline;
-}
-
-.blue
-{
-    color: blue
-}
-
-.imageHeight
-{
-    height: 40px;
-}
-
 .format
 {
     margin: auto;
@@ -63,28 +38,6 @@ h1
     font-size: 1.08vw;
 }
 
-.indent
-{
-    padding-left: 50px;
-}
-
-.imageR
-{
-    width: 25vw;
-    height: auto;
-    float:right;
-    padding-left: 50px;
-
-}
-
-.imageL
-{
-    width: 25vw;
-    height: auto;
-    float:left;
-    padding-right: 50px;
-
-}
 
 .subtitle
 {
@@ -92,7 +45,14 @@ h1
 
 }
 
-h1
-{
-    font-size: 25;
+.center-text {
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }

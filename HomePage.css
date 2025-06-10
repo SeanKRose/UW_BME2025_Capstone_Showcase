@@ -53,20 +53,48 @@ h1 {
     color: black;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
+    overflow: hidden;
 }
 
 .tile:hover {
     transform: scale(1.05);
 }
 
-.tile img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
 .caption {
     padding: 1rem;
     font-weight: bold;
+}
+
+/* Image container to hold both images stacked */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Both images fill container, stacked */
+.poster-img,
+.prototype-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+/* Prototype hidden by default */
+.prototype-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* On hover, fade in prototype and hide poster */
+.tile:hover .prototype-img {
+    opacity: 1;
+}
+
+.tile:hover .poster-img {
+    opacity: 0;
 }

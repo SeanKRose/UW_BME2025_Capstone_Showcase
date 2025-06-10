@@ -35,14 +35,19 @@ for filename in sorted(os.listdir(data_folder)):
         print(f"Generated {output_filename}")
 
         # Collect info for homepage
+        poster_image_path = f"./TeamPosters/{team_data['Team_Number']}.jpg"
+        if not os.path.exists(poster_image_path):
+            poster_image_path = "TeamLogo/goose.png"
+            
         prototype_image_path = f"./TeamPrototypes/{team_data['Team_Number']}.png"
         if not os.path.exists(prototype_image_path):
-            prototype_image_path = "TeamLogo/goose.png"
+            prototype_image_path = "TeamLogo/smugwhale.png"
 
         homepage_teams.append({
             "Team_Name": team_data["Team_Name"],
             "Team_Number": team_data["Team_Number"],
             "Prototype_Image": prototype_image_path,
+            "Poster": poster_image_path,
             "Page_Link": f"./TeamHTMLFiles/team{int(team_num):02}.html"
         })
 

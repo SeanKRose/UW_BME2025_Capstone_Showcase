@@ -19,8 +19,11 @@
     <div class="gallery">
         {% for team in teams %}
         <a class="tile" href="{{ team.Page_Link }}">
+            <div class="image-container">
+                <img src="{{ team.Poster }}" alt="{{ team.Team_Name }} Poster" class="poster-img" />
+                <img src="{{ team.Prototype_Image }}" alt="{{ team.Team_Name }} Prototype" class="prototype-img" />
+            </div>
             <div class="caption">{{ team.Team_Name }}</div>
-            <img src="{{ team.Prototype_Image }}" alt="{{ team.Team_Name }}" />
         </a>
         {% endfor %}
     </div>

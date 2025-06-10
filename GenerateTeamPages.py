@@ -37,7 +37,7 @@ for filename in sorted(os.listdir(data_folder)):
         # Collect info for homepage
         prototype_image_path = f"./TeamPrototypes/{team_data['Team_Number']}.png"
         if not os.path.exists(prototype_image_path):
-            prototype_image_path = "/TeamLogo/uwenglogo.png"
+            prototype_image_path = "TeamLogo/goose.png"
 
         homepage_teams.append({
             "Team_Name": team_data["Team_Name"],

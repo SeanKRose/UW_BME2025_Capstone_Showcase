@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="HomePage.css" />
 </head>
 <body>
+    <div class="logo-row">
+        <img src="TeamLogo/uwlogo.png" alt="University of Waterloo Logo" class="logo" />
+        <img src="TeamLogo/uwenglogo.png" alt="UW Engineering Logo" class="logo" />
+        <img src="TeamLogo/uwbmelogo.jpg" alt="UW Biomedical Engineering Logo" class="logo" />
+    </div>
+    
     <div class="header">
-        <img src="TeamLogo/uwenglogo.png" alt="UW Engineering Logo" class="logo" />
         <h1>2025 BME Capstone Showcase</h1>
-        <img src="TeamLogo/uwenglogo.png" alt="UW Engineering Logo" class="logo" />
     </div>
 
-    <!-- Gallery and rest of the page content here -->
     <div class="gallery">
         {% for team in teams %}
         <a class="tile" href="{{ team.Page_Link }}">

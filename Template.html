@@ -53,7 +53,7 @@
             <h1 class="title">Project Description</h1>
             <body>{{Project_Description}}</body>
             <br><br>
-            <img src="../TeamPrototypes/{{Team_Number}}.png" alt="Picture of {{Team_Name}}'s Prototype">
+            <img class="image" src="../TeamPrototypes/{{Team_Number}}.png" alt="Picture of {{Team_Name}}'s Prototype">
             <br><br>
             {% if Specialization %}
                 <h2>Specializations</h2>
@@ -74,7 +74,7 @@
     <div class="container intro">
         <p4>
             <h1 class="title">Symposium Poster</h1>
-            <img src="../TeamPosters/{{Team_Number}}.jpg" alt="Picture of {{Team_Name}}'s Capstone Symposium Poster" class="image">
+            <img class="image" src="../TeamPosters/{{Team_Number}}.jpg" alt="Picture of {{Team_Name}}'s Capstone Symposium Poster" class="image">
         </p4>
     </div>
 
@@ -84,10 +84,10 @@
         <p1>
             <h1 class="title">Meet the {{Team_Name}} Team!</h1>
             <br>
-            <img src="../TeamPictures/{{Team_Number}}.jpg" alt="A picture of {{Team_Name}}" class="image">
-            <center>{{Team_Members}}</center>
-            <br>
-            <center>Advisor: {{Advisor}}</center>
+            <img class="image" src="../TeamPictures/{{Team_Number}}.jpg" alt="A picture of {{Team_Name}}" class="image">
+            <p class="center-text">{{Team_Members}}</p>
+            <p class="center-text">Advisor: {{Advisor}}</p>
+
         </p1>
     </div>
 
@@ -120,9 +120,11 @@
     <br>
     <div class="container intro">
         <h1 class="subtitle">Additional Information</h1>
-            {% for info in Additional_Information %}
-                <a href={{info.link}}>{{info.type}}</a>
-            {% endfor %}
+            <ol>
+                {% for info in Additional_Information %}
+                <li><a href={{info.link}}>{{info.type}}</a></li>
+                {% endfor %}
+            </ol>
     </div>
     {% endif %}
 
@@ -134,6 +136,8 @@
 
     </div>
     {% endif %}
+
+    <br>
 
 </body>
 </html>

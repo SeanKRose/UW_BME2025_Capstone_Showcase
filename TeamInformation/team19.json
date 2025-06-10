@@ -13,7 +13,7 @@
       "details": "Awarded the Best BME Prototype at the Capstone Symposium."
     }
   ],
-  "Team_Members": "Joey Mitchell, Sean Rose, Hannah Trub, Rhys Cornelious, Sam Suys",
+  "Team_Members": "Sam Suys, Hannah Trub, Rhys Cornelious, Joey Mitchell, Sean Rose",
   "Advisor": "Eline Boghaert",
   "Overall_Capstone_Experience": "Inventive, Intense, Impactful",
   "Favourite_Memory": "Building the prototype together at 2am.",
@@ -24,6 +24,8 @@
   "Primary_Colour": "#58c4c5",
   "Secondary_Colour": "#ecf6f6",
   "Additional_Information": [
-    {"type": "Symposium Slides", "link": "https://docs.google.com/presentation/d/1m_EC6lCH-kNOtbAjFnsoI9Hde6I62wgrovwmLXCKQZA/edit?usp=sharing"}
+    {"type": "Symposium Slides", "link": "https://docs.google.com/presentation/d/1m_EC6lCH-kNOtbAjFnsoI9Hde6I62wgrovwmLXCKQZA/edit?usp=sharing"},
+    {"type": "Panel Exam", "link": "https://docs.google.com/presentation/d/1Aw0TkY7G-IwizaxptPy5V8TPYn1kLr-wSMKB5OK26WY/edit?usp=sharing"},
+    {"type": "Design Report", "link": "https://docs.google.com/document/d/1Zi0TNgRh89EHn_sp_jmjYTZNzL_4eZ5XkxBqlmAMWAw/edit?usp=sharing"}
   ]
 }

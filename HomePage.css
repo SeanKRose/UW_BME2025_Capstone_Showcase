@@ -44,3 +44,32 @@ h1 {
     padding: 1rem;
     font-weight: bold;
 }
+
+/* Updated header styling */
+.header {
+    display: flex;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* center horizontally */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Logos take max 10% width */
+.logo {
+    width: 10vw;
+    max-width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Title takes 60% width */
+.homepage-title {
+    flex: 0 0 60%;
+    margin: 0;
+    font-size: 3vw;
+    color: gold;
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}

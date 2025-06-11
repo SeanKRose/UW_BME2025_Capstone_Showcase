@@ -36,10 +36,6 @@
             background-color: {{ Secondary_Colour | default("ffffff") }};
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
     </style>
 </head>
 
@@ -53,8 +49,18 @@
             <h1 class="title">Project Description</h1>
             <body>{{Project_Description}}</body>
             <br><br>
-            <img class="image" src="../TeamPrototypes/{{Team_Number}}.png" alt="Picture of {{Team_Name}}'s Prototype">
+
+            <!-- Prototype Picture -->
+            {% if Video_File %}
+                <video class="image" controls muted loop>
+                    <source src="TeamPrototypes/{{ Team_Number }}.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            {% else %}
+                <img class="image" src="../TeamPrototypes/{{ Team_Number }}.png" alt="Picture of {{ Team_Name }}'s Prototype">
+            {% endif %}
             <br><br>
+
             {% if Specialization %}
                 <h2>Specializations</h2>
                 This project qualified for the requirements of the <b>{{Specialization}}</b> specialization.

@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{Team_Name}}</title>
     <link rel="stylesheet" href="../TeamPages.css">
-
     <style>
         body {
             background-color: {{ Primary_Colour | default("#ffffff") }};
-            color: {{ ("#000000") }};
+            color: #000000;
         }
 
         .title, h1, h2, h3, h4, h5, h6 {
@@ -28,14 +16,12 @@
             border-radius: 8px;
         }
 
-
         .intro {
             border: 2px solid {{ Secondary_Colour | default("#000000") }};
             padding: 15px;
             border-radius: 8px;
-            background-color: {{ Secondary_Colour | default("ffffff") }};
+            background-color: {{ Secondary_Colour | default("#ffffff") }};
         }
-
     </style>
 </head>
 
@@ -50,10 +36,9 @@
             <body>{{Project_Description}}</body>
             <br><br>
 
-            <!-- Prototype Picture -->
             {% if Video_File %}
                 <video class="image" controls muted loop>
-                    <source src="TeamPrototypes/{{ Team_Number }}.mp4" type="video/mp4">
+                    <source src="../TeamPrototypes/{{ Team_Number }}.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             {% else %}
@@ -64,8 +49,9 @@
             {% if Specialization %}
                 <h2>Specializations</h2>
                 This project qualified for the requirements of the <b>{{Specialization}}</b> specialization.
-            {% endif %}
             <br>
+            {% endif %}
+
             {% if awards %}
                 <h2>Funding, Awards, & Distinctions</h2>
                 {% for award in awards %}
@@ -80,7 +66,7 @@
     <div class="container intro">
         <p4>
             <h1 class="title">Symposium Poster</h1>
-            <img class="image" src="../TeamPosters/{{Team_Number}}.jpg" alt="Picture of {{Team_Name}}'s Capstone Symposium Poster" class="image">
+            <img class="image" src="../TeamPosters/{{Team_Number}}.jpg" alt="Picture of {{Team_Name}}'s Capstone Symposium Poster">
         </p4>
     </div>
 
@@ -90,10 +76,9 @@
         <p1>
             <h1 class="title">Meet the {{Team_Name}} Team!</h1>
             <br>
-            <img class="image" src="../TeamPictures/{{Team_Number}}.jpg" alt="A picture of {{Team_Name}}" class="image">
+            <img class="image" src="../TeamPictures/{{Team_Number}}.jpg" alt="A picture of {{Team_Name}}">
             <p class="center-text">{{Team_Members}}</p>
             <p class="center-text">Advisor: {{Advisor}}</p>
-
         </p1>
     </div>
 
@@ -103,34 +88,40 @@
         <h1 class="title">Overall Capstone Experience</h1>
 
         <h3 class="subtitle">Capstone Described in 3 Words:</h3>
-        {{Overall_Capstone_Experience}}
-        <br>
+        <p>{{Overall_Capstone_Experience}}</p>
+
         <h3 class="subtitle">Favourite Capstone Memory</h3>
-        {{Favourite_Memory}}
-        <br>
+        <p>{{Favourite_Memory}}</p>
+
         <h3 class="subtitle">Biggest Challenges</h3>
-        <ol>
-            {% for challenge in Biggest_Challenges %}
-            <li>{{ challenge }}</li>
-            {% endfor %}
-        </ol>
-        <br>
+        {% if Biggest_Challenges | length == 1 %}
+            <p>{{ Biggest_Challenges[0] }}</p>
+        {% elif Biggest_Challenges %}
+            <ol>
+                {% for challenge in Biggest_Challenges %}
+                <li>{{ challenge }}</li>
+                {% endfor %}
+            </ol>
+        {% else %}
+            <p>No challenges listed.</p>
+        {% endif %}
+
         <h3 class="subtitle">Takeaways</h3>
-        {{Takeaway}}
-        <br>
-        <h3 class="subtitle">Advice for Future BME Students</h3>
-        {{Advice}}
-    </div>
+        <p>{{Takeaway}}</p>
         
+        <h3 class="subtitle">Advice for Future BME Students</h3>
+        <p>{{Advice}}</p>  
+    </div>
+
     {% if Additional_Information %}
     <br>
     <div class="container intro">
         <h1 class="subtitle">Additional Information</h1>
-            <ol>
-                {% for info in Additional_Information %}
-                <li><a href={{info.link}}>{{info.type}}</a></li>
-                {% endfor %}
-            </ol>
+        <ol>
+            {% for info in Additional_Information %}
+            <li><a href="{{info.link}}">{{info.type}}</a></li>
+            {% endfor %}
+        </ol>
     </div>
     {% endif %}
 
@@ -139,11 +130,9 @@
     <div class="container intro">
         <h1 class="subtitle">Contact Information</h1>
         Feel free to reach out to {{Contact_Information}} with any questions.
-
     </div>
     {% endif %}
 
     <br>
-
 </body>
 </html>

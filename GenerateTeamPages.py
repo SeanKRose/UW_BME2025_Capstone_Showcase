@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 # Setup Jinja2 environment
 env = Environment(loader=FileSystemLoader('.'))
 team_template = env.get_template('TeamPageTemplate.html')
-home_template = env.get_template('HomePageTemplate.html')  # NEW: for the homepage
+home_template = env.get_template('HomePageTemplate.html')
 
 # Create output folder
 os.makedirs("TeamHTMLFiles", exist_ok=True)
@@ -25,6 +25,10 @@ for filename in sorted(os.listdir(data_folder)):
         with open(team_path, "r", encoding="utf-8") as f:
             team_data = json.load(f)
 
+        # Determine if MP4 video file exists
+        video_path = f"TeamPrototypes/{team_data['Team_Number']}.mp4"
+        team_data["Video_File"] = os.path.exists(video_path)
+
         # Render individual team HTML
         rendered_html = team_template.render(**team_data)
 
@@ -34,11 +38,11 @@ for filename in sorted(os.listdir(data_folder)):
 
         print(f"Generated {output_filename}")
 
-        # Collect info for homepage
+        # Determine paths for homepage
         poster_image_path = f"./TeamPosters/{team_data['Team_Number']}.jpg"
         if not os.path.exists(poster_image_path):
             poster_image_path = "TeamLogo/goose.png"
-            
+
         prototype_image_path = f"./TeamPrototypes/{team_data['Team_Number']}.png"
         if not os.path.exists(prototype_image_path):
             prototype_image_path = "TeamLogo/smugwhale.png"

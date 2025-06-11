@@ -1,7 +1,7 @@
 {
   "Team_Number": "19",
   "Team_Name": "HemoTrek",
-  "Project_Description": "HemoTrek presents a compact, efficient, and user-friendly blood viscometer designed to diagnose Hyperviscosity Syndrome (HVS) in clinical settings. HVS is a serious medical condition characterized by abnormally viscous blood, which can lead to severe complications such as organ dysfunction and neurological impairments. Early detection and continuous monitoring are crucial for effective treatment; however, current viscometry tools are time-consuming and dependent on centralized laboratory testing, causing delays in patient care. HemoTrek provides clinicians with a point-of-care solution that delivers real-time viscosity measurements to enable timely interventions.",
+  "Project_Description": "HemoTrek presents a compact, efficient, and user-friendly blood viscometer designed to diagnose <b>Hyperviscosity Syndrome (HVS)</b> in clinical settings. HVS is a serious medical condition characterized by abnormally viscous blood, which can lead to severe complications such as organ dysfunction and neurological impairments. Early detection and continuous monitoring are crucial for effective treatment; however, current viscometry tools are time-consuming and dependent on centralized laboratory testing, causing delays in patient care. HemoTrek provides clinicians with a point-of-care solution that delivers real-time viscosity measurements to enable timely interventions.",
   "Specialization": "Medical Devices",
   "awards": [
     {
@@ -17,11 +17,11 @@
   "Advisor": "Eline Boghaert",
   "Overall_Capstone_Experience": "Inventive, Intense, Impactful",
   "Favourite_Memory": "Building the prototype together at 2am.",
-  "Biggest_Challenges": ["The number of iterations required in such a short time."],
+  "Biggest_Challenges": ["The number of iterations required in such a short time.", "Online databases not having the proper dimensions listed on their website."],
   "Takeaway": "Strong teamwork makes technical progress possible.",
   "Advice": "Start prototyping EARLY. Having a partial prototype to show by the end of 4A will help convey your vision for the project to the teaching team, allowing you to receive better feedback and clarify expectations. You will also encounter significantly more problems than you expect, so don't rule out any potential solution too early.",
   "Contact_Information": "sean.rose@uwaterloo.ca",
-  "Primary_Colour": "#58c4c5",
+  "Primary_Colour": "#4BA6A7",
   "Secondary_Colour": "#ecf6f6",
   "Additional_Information": [
     {"type": "Symposium Slides", "link": "https://docs.google.com/presentation/d/1m_EC6lCH-kNOtbAjFnsoI9Hde6I62wgrovwmLXCKQZA/edit?usp=sharing"},

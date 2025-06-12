@@ -12,6 +12,10 @@
   "Takeaway": "Learned that you can accomplish crazy things in a time crunch and can learn things you’ve never done before if stuff needs to get done!",
   "Advice": "You can learn entirely new skills for capstone! Don’t back away from a project for that reason, and try to choose group members with different niches so that your skills come together well.",
   "Contact_Information": "Ria Prakash at r7prakas@uwaterloo.ca or riri36 on Discord",
-  "Primary_Colour":"",
-  "Secondary_Colour":""
+  "Primary_Colour":"#663973",
+  "Secondary_Colour":"#d1c8e4",
+  "Additional_Information": [
+    {"type": "Panel Exam", "link": "https://docs.google.com/presentation/d/14HwAB2PJWXYx0aK9xRcK0MVR2DuC5FMxirY4sLfvJ7M/edit?usp=sharing"},
+    {"type": "Design Report", "link": "final report: https://docs.google.com/document/d/1-g_pGnc4yG4Ixz513xB9NEvfLh7AKCQMmkmUkCAztKg/edit?usp=sharing"}
+  ]
 }

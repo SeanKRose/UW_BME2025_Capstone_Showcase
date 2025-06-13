@@ -10,13 +10,21 @@ h1
     font-size: 3vw;
 }
 
-.title
-{
+.title {
     color: black;
-    /*border:2px double red;*/
     text-align: center;
     font-size: 5vw;
+
+    /* Flexbox for vertical centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Padding for vertical spacing */
+    padding: 1rem 0;
+    gap: 1rem; /* Optional: space between logo and text if added */
 }
+
 
 .format
 {

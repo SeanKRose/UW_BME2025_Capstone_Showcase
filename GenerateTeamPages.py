@@ -25,6 +25,10 @@ for filename in sorted(os.listdir(data_folder)):
         with open(team_path, "r", encoding="utf-8") as f:
             team_data = json.load(f)
 
+        #Determine if a Team Logo file exists
+        team_logo_path = f"./TeamLogo/{team_data['Team_Number']}.png"
+        team_data["Has_Logo"] = os.path.exists(team_logo_path)
+
         # Determine if MP4 video file exists
         video_path = f"TeamPrototypes/{team_data['Team_Number']}.mp4"
         team_data["Video_File"] = os.path.exists(video_path)
@@ -41,7 +45,7 @@ for filename in sorted(os.listdir(data_folder)):
         # Determine paths for homepage
         poster_image_path = f"./TeamPosters/{team_data['Team_Number']}.jpg"
         if not os.path.exists(poster_image_path):
-            poster_image_path = "TeamLogo/goose.png"
+            poster_image_path = "TeamLogo/goose2.png"
 
         prototype_image_path = f"./TeamPrototypes/{team_data['Team_Number']}.png"
         if not os.path.exists(prototype_image_path):

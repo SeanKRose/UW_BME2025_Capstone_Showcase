@@ -81,6 +81,9 @@ h1 {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Prototype hidden by default */

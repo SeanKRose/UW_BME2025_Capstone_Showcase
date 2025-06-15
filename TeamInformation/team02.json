@@ -2,7 +2,7 @@
   "Team_Number": "2",
   "Team_Name": "PHMS",
   "Project_Description": "This Capstone project aims to create a personal healthcare management system (PHMS) where users can securely upload, store, and manage their health information in the standardized FHIR format. Using RAG and LLMs would provide a user-friendly data query tool that summarizes and delivers valuable insights on medical terminology and longitudinal trends. This solution promotes patient autonomy and is particularly useful for those with limited access to general practitioners and other more sophisticated healthcare systems.",
-  "Specialization": "",
+  "Qualification": "",
   "awards": "",
   "Team_Members": "Utku Cicek, Zain-Ul-Abideen Altaf, Cooper Owen, Ishan Bhatia",
   "Advisor": "",

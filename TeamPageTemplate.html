@@ -27,8 +27,13 @@
 
 <body class="container format">
     <h1 class="title"> 
-        <img src="../TeamLogo/{{Team_Number}}.png" alt="{{Team_Name}} Logo" style="height: 80px;"> 
+        {% if Has_Logo %}
+            <img src="../TeamLogo/{{Team_Number}}.png" alt="{{Team_Name}} Logo" style="height: 80px;"> 
+        {% else %}
+            <u>{{ Team_Name }}</u>
+        {% endif %}
     </h1>
+
 
     <div class="container intro">
         <p1>
@@ -46,9 +51,9 @@
             {% endif %}
             <br><br>
 
-            {% if Specialization %}
-                <h2>Specializations</h2>
-                This project qualified for the requirements of the <b>{{Specialization}}</b> specialization.
+            {% if Qualification %}
+                <h2>Qualification for Specializations & Options</h2>
+                This project qualified for the requirements of the <b>{{Qualification}}</b>.
             <br>
             {% endif %}
 

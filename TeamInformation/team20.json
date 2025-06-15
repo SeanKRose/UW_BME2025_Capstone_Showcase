@@ -2,7 +2,7 @@
   "Team_Number": "20",
   "Team_Name": "WheelSafe",
   "Project_Description": "WheelSafe is a system designed to mitigate backward tipping in manual wheelchairs, lowering the risk of serious injuries such as head trauma and spinal cord damage. It uses Inertial Measurement Unit (IMU) sensors to detect backward falls in real time and subsequently triggers a solenoid-based mechanism to stabilize the wheelchair. This design ensures quick response time, energy efficiency, and minimal interference with regular wheelchair maneuvers. WheelSafe enables users to navigate curbs and uneven terrain while maintaining their independence by striking a balance between safety, mobility and independence.",
-  "Specialization": "",
+  "Qualification": "",
   "awards": "",
   "Team_Members": "Rayeeda Afrida Prerona, Isha Sharma, Khanh Le, Sofia Rodriguez Suarez",
   "Advisor": "",

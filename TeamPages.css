@@ -63,3 +63,34 @@ h1
     max-width: 100%;
     height: auto;
 }
+
+.logo-wide {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.poster-image {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.team-image {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.prototype-image {
+    max-width: 95vw;      /* maximum 95% of the viewport width */
+    max-height: 75vh;     /* maximum 75% of the viewport height */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;  /* ensures aspect ratio is maintained */
+}
